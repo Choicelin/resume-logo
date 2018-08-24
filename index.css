@@ -15,7 +15,7 @@ a {
 }
 
 body {
-  color: #fff;
+  color: #000;
   background: #000;
 }
 
@@ -24,7 +24,12 @@ li {
 }
 
 nav {
+  position: absolute;
+  left: 0;
+  top: 0;
   padding: 28px 16px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .fl {
@@ -65,4 +70,83 @@ ul > li:hover {
 
 .logo .card {
   color: #9a9da2;
+}
+
+.banner {
+  height: 515px;
+  background-image: url(./img/rs-cover.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.banner .mask {
+  height: 515px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.userCard {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+}
+
+.userCard .pictureAndText {
+  padding: 50px;
+}
+
+.userCard .picture {
+  float: left;
+}
+
+.userCard .text {
+  float: left;
+  margin-left: 65px;
+  width: 470px;
+}
+
+.userCard .welcome {
+  background: #e6686a;
+  color: white;
+  display: inline-block;
+  padding: 4px 16px;
+  line-height: 22px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.userCard .welcome .triangle {
+  display: block;
+  border: 10px solid transparent;
+  width: 0px;
+  border-left-color: #e6686a;
+  border-top-width: 0px;
+  position: absolute;
+  left: 4px;
+  top: 100%;
+}
+
+.userCard > footer.media {
+  background: #E6686A;
+  text-align: center;
+}
+
+.userCard > footer.media > a {
+  display: inline-block;
+  width: 40px;
+  line-height: 30px;
+  padding: 5px 0;
+  border-radius: 50%;
+  margin: 16px;
+}
+
+.userCard svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  vertical-align: top;
+}
+
+.userCard > footer.media > a:hover {
+  background: #CF5D5F;
 }
